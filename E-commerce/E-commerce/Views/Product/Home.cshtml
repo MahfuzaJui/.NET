@@ -1,0 +1,30 @@
+﻿@model.List<E-commerce.Models.Database.Product_list>
+@{
+    ViewBag.Title = "Home";
+}
+
+<h2>Home</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th> ID</th>
+        <th> Name</th>
+        <th> Price</th>
+        <th> Quantity</th>
+    </tr>
+    @foreach (var p in Model)
+     {
+    <tr>
+        <td> @p.ID</td>
+        <td> @p.Name</td>
+        <td> @p.Price</td>
+        <td> @p.Quantity</td>
+
+
+    </tr>
+
+
+     }
+
+
+</table>
